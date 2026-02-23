@@ -41,7 +41,7 @@ body:
         -----
 
         ## Confirm archivation
-        - [ ] Validate [reasons for project archival](https://community.finos.org/docs/governance/Software-Projects/maturity/archived)
+        - [ ] Validate [reasons for project archival](https://community.finos.org/docs/governance/lifecycle-stages/archived)
         - [ ] Discuss request with FINOS Leadership team
         - [ ] Get in touch with Project Lead. If she/he agrees with the request, then move forward
         - [ ] (if applicable, and on a case to case basis) communicate project archival, reasons for archival and implications of archival to the project community
