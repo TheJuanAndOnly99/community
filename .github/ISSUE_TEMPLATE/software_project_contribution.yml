@@ -215,9 +215,9 @@ body:
     attributes:
       label: Compliance Checklist
       options:
-        - label: 
-        - label: 
-        - label: 
+        - label: "..."
+        - label: "..."
+        - label: "..."
 
   - type: markdown
     attributes:
