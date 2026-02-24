@@ -34,7 +34,7 @@ body:
     id: stage
     attributes:
       label: Target Lifecycle Stage
-      description: "Which lifecycle stage are you applying for? See the [FINOS project lifecycle documentation](https://community.finos.org/docs/governance/project-lifecycle)"
+      description: "Which lifecycle stage are you applying for? See the [FINOS project lifecycle documentation](https://community.finos.org/docs/governance/project-lifecycle)."
       options:
         - Labs
         - Incubating
@@ -59,7 +59,8 @@ body:
     id: project_slug
     attributes:
       label: Project Slug
-      placeholder: "Must follow kebab-case naming convention"
+      description: "Slug must follow kebab-case naming convention."
+      placeholder: "Proposed project slug"
     validations:
       required: true
 
