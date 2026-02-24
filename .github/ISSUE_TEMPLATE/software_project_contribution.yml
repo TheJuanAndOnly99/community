@@ -259,7 +259,7 @@ body:
   - type: checkboxes
     id: toc_decision
     attributes:
-      label: FINOS TOC reviewed the contribution and it was:
+      label: FINOS TOC reviewed the contribution and it was
       options:
        - label: "Accepted"
        - label: "Rejected"
