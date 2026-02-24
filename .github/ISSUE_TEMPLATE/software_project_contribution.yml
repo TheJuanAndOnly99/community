@@ -105,8 +105,8 @@ body:
 
   - type: textarea
     id: target_contributors
-    attributes: Target Contributors
-      label: 
+    attributes:
+      label: Target Contributors
       description: "Describe the contributor profile (background, position, etc) and if applicable organizational profile (financial institutions, tech vendors, consulting firms, etc) you would like to get contributions from."
     validations:
       required: true
