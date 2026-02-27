@@ -29,6 +29,10 @@ body:
 
   - type: markdown
     attributes:
+      value: "---"
+
+  - type: markdown
+    attributes:
       value: "## 1. LABS FOUNDATION"
 
   - type: checkboxes
@@ -41,6 +45,10 @@ body:
         - label: "I confirm that the codebase meets [Labs Ongoing Maintenance Requirements](https://community.finos.org/docs/governance/lifecycle-stages/labs/#labs-ongoing-maintenance-requirements)"
     validations:
       required: true
+
+  - type: markdown
+    attributes:
+      value: "---"
 
   - type: markdown
     attributes:
@@ -71,6 +79,10 @@ body:
 
   - type: markdown
     attributes:
+      value: "---"
+
+  - type: markdown
+    attributes:
       value: "## 3. INCUBATING ONGOING MAINTENANCE COMMITMENT"
 
   - type: checkboxes
@@ -86,7 +98,7 @@ body:
         - label: "The Project Team commits to pre-release integration with a FINOS-approved dependency and license scanner"
         - label: "The Project Team commits to build and release processes that use NO private or undocumented steps"
         - label: "The Project Team commits to presenting a project update once every six months at a public TOC meeting"
-        - label: "The Project Team commits to adhering to Maturity Level 2 of the OpenSSF Security Baseline"
+        - label: "The Project Team commits to adhering to Maturity Level 2 of the [OpenSSF Security Baseline](https://baseline.openssf.org/)"
     validations:
       required: true
 
@@ -98,6 +110,10 @@ body:
       placeholder: "Describe readiness and provide supporting links..."
     validations:
       required: true
+
+  - type: markdown
+    attributes:
+      value: "---"
 
   - type: markdown
     attributes:
@@ -117,3 +133,21 @@ body:
     attributes:
       label: TOC Findings (Internal Use)
       description: "To be filled by the TOC during the review process."
+
+  - type: markdown
+    attributes:
+      value: "---"
+
+  - type: markdown
+    attributes:
+      value: "## 5. INTERNAL OPERATIONS (FINOS Staff Only)"
+
+  - type: checkboxes
+    id: internal_ops
+    attributes:
+      label: Operational Completion
+      description: "This checkbox is for FINOS Staff use only."
+      options:
+        - label: "I confirm that all internal FINOS operational tasks related to this lifecycle transition have been completed."
+    validations:
+      required: false
