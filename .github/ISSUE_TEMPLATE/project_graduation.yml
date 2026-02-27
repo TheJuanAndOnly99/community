@@ -43,7 +43,7 @@ body:
       options:
         - label: "I confirm that the project continues to meet all [Incubating Acceptance Requirements](https://community.finos.org/docs/governance/lifecycle-stages/incubating#acceptance-requirements) (including the Labs stage requirements)"
         - label: "I confirm that the project meets all [Incubating Ongoing Maintenance Requirements](https://community.finos.org/docs/governance/lifecycle-stages/incubating#ongoing-maintenance-requirements)"
-        - label: "The project has adhered to its roadmap during Incubation"
+        - label: "I confirm that the project has adhered to its roadmap during Incubation"
     validations:
       required: true
 
@@ -63,8 +63,8 @@ body:
       options:
         - label: "Project has made a production-ready major release (v1.0.0 or higher)"
         - label: "Major release was announced to the announce@lists.finos.org mailing list"
-        - label: "The Project Team commits to following Semantic Versioning (SemVer) strictly"
-        - label: "The Project Team has published and adheres to a FINOS responsible disclosure security policy"
+        - label: "The Project Team commits to following [Semantic Versioning (semver)](https://semver.org/) strictly"
+        - label: "The Project Team has published and adheres to a [FINOS responsible disclosure security policy](https://community.finos.org/docs/governance/software-projects/cve-responsible-disclosure/)"
         - label: "The Project Team commits to adhering to Maturity Level 3 of the [OpenSSF Security Baseline](https://baseline.openssf.org/)"
     validations:
       required: true
