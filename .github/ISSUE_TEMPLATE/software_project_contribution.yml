@@ -11,7 +11,7 @@ body:
         Thank you for your interest in contributing. Please read the instructions below carefully and fill in all required information to help us process your proposal efficiently.
 
         #### ⚠️ Important Note on Membership
-        Only **FINOS members** can formally propose new projects. If you are not representing a member organization, this issue may be closed. Non-members are encouraged to identify a member sponsor during the socialization phase. [See membership benefits here](https://www.finos.org/membership-benefits#become-a-member).
+        Only **FINOS members** can propose new projects. Non-members are encouraged to identify a member sponsor during the socialization phase. [See here](https://www.finos.org/membership-benefits#become-a-member) if you are interested in becoming a FINOS member.
 
   - type: checkboxes
     id: prerequisites
@@ -57,7 +57,7 @@ body:
   - type: input
     id: project_name
     attributes:
-      label: Software Name
+      label: Name
       placeholder: "The proposed project common name"
     validations:
       required: true
@@ -65,7 +65,7 @@ body:
   - type: input
     id: project_slug
     attributes:
-      label: Software Slug
+      label: Slug
       description: "Must be kebab-case (e.g., my-project-name)"
     validations:
       required: true
@@ -100,9 +100,11 @@ body:
       label: Maintainer Team
       description: "Identify the core team. At least one maintainer must be from a FINOS member org."
       value: |
-        | Name | Affiliation | Email | GitHub |
+        | Name | Affiliation | Email | GitHub Username |
         | :--- | :--- | :--- | :--- |
-        | | | | |
+        | John Example |Example LTD | john@example.com | @johnexampleabc |
+        | Jane Example | Example LTD | jane@example.com | @janeexamplexyz |
+
     validations:
       required: true
 
@@ -120,11 +122,11 @@ body:
       label: Compliance & Requirements Agreement
       description: "Confirm you have read and agree to the following [FINOS Requirements](https://community.finos.org/docs/governance/Software-Projects/Contribution-Compliance-Requirements)."
       options:
-        - label: "I confirm that I understand that all maintainers and contributors will need to be covered by a [Contributors License Agreement](https://community.finos.org/docs/governance/Software-Projects/easycla) (CCLA or ICLA.) before being able to contribute."
+        - label: " I understand that all maintainers and contributors will need to be covered by a [Contributors License Agreement](https://community.finos.org/docs/governance/software-projects/contribution-compliance-requirements/#contributor-license-agreement) before being able to contribute."
           required: true
-        - label: "I confirm that if the contribution is a software contribution it will use the Apache 2.0. License and any Third-Party code is compatible. See [License Categories](https://community.finos.org/docs/governance/software-projects/license-categories)."
+        - label: "I confirm that software will be covered by the [Apache 2.0. License](https://community.finos.org/docs/governance/software-projects/contribution-compliance-requirements/#license-information) and any [Third-Party code is compatible](https://community.finos.org/docs/governance/software-projects/contribution-compliance-requirements/#third-party-code-compliance)."
           required: true
-        - label: "I have selected the appropriate lifecycle stage based on that stages requirements. I agree and commit to to the Acceptance & Maintenance Requirements for my target stage."
+        - label: "I have selected the appropriate [lifecycle stage](https://community.finos.org/docs/governance/project-lifecycle) based on that stages requirements. I agree and commit to to the Acceptance & Maintenance Requirements for my target stage."
           required: true
 
   - type: checkboxes
@@ -132,7 +134,7 @@ body:
     attributes:
       label: Socialization Acknowledgement
       options:
-        - label: "I understand I may need to socialize this proposal to community@finos.org before a TOC review."
+        - label: "I understand I may need to socialize this proposal to community@finos.org before a TOC review to guage community interest."
           required: true
 
   - type: markdown
