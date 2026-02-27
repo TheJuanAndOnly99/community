@@ -1,14 +1,17 @@
-name: "Software Project Contribution and Onboarding"
+name: "🚀 Software Project Contribution"
 description: "Propose a new software project for FINOS Labs, Incubating, or Graduated stages."
-title: "[Project Name]: Software Project Contribution and Onboarding"
+title: "Proposed: [Project Name]"
 labels: ["contribution"]
 assignees: ["maoo", "TheJuanAndOnly99"]
 body:
   - type: markdown
     attributes:
       value: |
-        ### Prerequisites
-        Please note that only FINOS members can propose new projects. If you're interested in membership, see [here](https://www.finos.org/membership-benefits#become-a-member).
+        ### Welcome to the FINOS Community! 
+        Thank you for your interest in contributing. Please read the instructions below carefully and fill in all required information to help us process your proposal efficiently.
+
+        #### ⚠️ Important Note on Membership
+        Only **FINOS members** can formally propose new projects. If you are not representing a member organization, this issue may be closed. Non-members are encouraged to identify a member sponsor during the socialization phase. [See membership benefits here](https://www.finos.org/membership-benefits#become-a-member).
 
   - type: checkboxes
     id: prerequisites
@@ -16,25 +19,17 @@ body:
       label: Contribution Prerequisites
       options:
         - label: "I confirm I am contributing on behalf of a FINOS member OR I will seek a maintainer from a member during socialization."
-          required: true
-        - label: "I have reviewed the [FINOS Contribution Process](https://community.finos.org/docs/governance/software-projects/contribution/#contribution-of-an-existing-code-base-into-finos-as-a-new-project)."
-          required: true
+        - label: "I have reviewed the [FINOS Contribution Process](https://community.finos.org/docs/governance/software-projects/contribution/)."
+        - label: "I have reviewed the [FINOS Project Lifecycle](https://community.finos.org/docs/governance/project-lifecycle) stages."
         - label: "I am familiar with [FINOS Governance](https://community.finos.org/docs/governance) and [Maintainer Responsibilities](https://community.finos.org/docs/finos-maintainers-cheatsheet/)."
-          required: true
-
-  - type: input
-    id: member_org_name
-    attributes:
-      label: FINOS Member Organization Name
-      description: "If contributing on behalf of a member, please enter the organization name here."
     validations:
-      required: false
+      required: true
 
   - type: dropdown
     id: stage
     attributes:
       label: Target Lifecycle Stage
-      description: "Which lifecycle stage are you applying for? See the [FINOS project lifecycle documentation](https://community.finos.org/docs/governance/project-lifecycle)."
+      description: "Which stage are you applying for based on the FINOS Project Lifecycle?"
       options:
         - Labs
         - Incubating
@@ -42,223 +37,118 @@ body:
     validations:
       required: true
 
+  - type: input
+    id: member_org_name
+    attributes:
+      label: FINOS Member Organization Name
+      description: "Enter the name of the member organization backing this proposal."
+    validations:
+      required: false
+
   - type: markdown
     attributes:
-      value: "## Describing The Contribution"
+      value: "---"
+  
+
+  - type: markdown
+    attributes:
+      value: "## 1. Project Details"
 
   - type: input
     id: project_name
     attributes:
-      label: Project Name
-      description: "Please review the [trademark checks](/docs/governance/Software-Projects/contribution#trademark) that will be performed."
-      placeholder: "Proposed project name"
+      label: Software Name
+      placeholder: "The proposed project common name"
     validations:
       required: true
 
   - type: input
     id: project_slug
     attributes:
-      label: Project Slug
-      description: "Slug must follow kebab-case naming convention."
-      placeholder: "Proposed project slug"
+      label: Software Slug
+      description: "Must be kebab-case (e.g., my-project-name)"
     validations:
       required: true
 
   - type: textarea
     id: description
     attributes:
-      label: Project Description
-      description: "Provide a 1-2 sentence summary of what the project does."
+      label: Description
+      description: "1-2 sentence summary of what the software does."
     validations:
       required: true
 
   - type: textarea
     id: business_problem
     attributes:
-      label: Business Problem
-      description: "Describe the business or technical problem the contribution solves and for whom."
-    validations:
-      required: true
-
-  - type: textarea
-    id: proposed_solution
-    attributes:
-      label: Proposed Solution
-      description: "Describe how this software project solves that business problem."
-    validations:
-      required: true
-
-  - type: textarea
-    id: roadmap
-    attributes:
-      label: Tentative Roadmap
-      description: "Describe the short and medium-term goals and phases of the project. What does success look like for this project?"
-    validations:
-      required: true
-
-  - type: textarea
-    id: current_state
-    attributes:
-      label: Current State 
-      description: "Summarize the history and current state of the project"
-    validations:
-      required: true
-
-  - type: textarea
-    id: target_contributors
-    attributes:
-      label: Target Contributors
-      description: "Describe the contributor profile (background, position, etc) and if applicable organizational profile (financial institutions, tech vendors, consulting firms, etc) you would like to get contributions from."
+      label: Business Problem & Solution
+      description: "Describe the specific problem this solves for Financial Services and how this software addresses it."
     validations:
       required: true
 
   - type: markdown
     attributes:
-      value: "## Existing Materials & Metadata"
+      value: "---"
 
-  - type: input
-    id: repo_url
+  - type: markdown
     attributes:
-      label: Current Repository URL
-      placeholder: "Link to GitHub repo (if it exists)."
-
-  - type: checkboxes
-    id: repo_access
-    attributes:
-      label: Repository Access
-      options:
-        - label: "I have given @finos-admin Read-Only (R/O) permissions (if the repo is private)."
-
-  - type: checkboxes
-    id: status_checks
-    attributes:
-      label: Current Project Status
-      description: "Check all that apply to the current state of the codebase."
-      options:
-        - label: "Continuous Integration (CI) is in use."
-        - label: "The project has previously done public releases."
-        - label: "The project build works successfully."
-        - label: "Existing documentation is available (site, PDF, or wiki)."
-        - label: "The project name has a registered trademark or has been used in the public domain."
-        - label: "An existing project logo is available."
-        - label: "A high-level pitch deck (~15 mins) is prepared for the FINOS Technical Oversight Committee."
-        - label: "Regular project meetings are currently being held."
-        - label: "This project is a Data Model."
-
-  - type: input
-    id: ci_system
-    attributes:
-      label: CI/CD System
-      placeholder: "e.g., GitHub Actions, Jenkins, CircleCI"
-      description: "If CI is used, which system is it?"
-
-  - type: input
-    id: latest_release
-    attributes:
-      label: Latest Release Link
-      placeholder: "URL to the latest public release"
-
-  - type: input
-    id: build_instructions
-    attributes:
-      label: Build Instructions Link
-      placeholder: "URL to README or documentation with build instructions"
-
-  - type: input
-    id: documentation_link
-    attributes:
-      label: Documentation Link
-      placeholder: "URL to microsite, PDF, or documentation folder"
-
-  - type: textarea
-    id: trademark_info
-    attributes:
-      label: Trademark & Public Domain Links
-      placeholder: "Link to press releases, blogs, or repository history proving prior use of the name"
-
-  - type: input
-    id: logo_link
-    attributes:
-      label: Logo Link
-      placeholder: "Link to a high-res logo (or add as attachment to issue)"
-
-  - type: input
-    id: pitch_deck_link
-    attributes:
-      label: Pitch Deck Link
-      placeholder: "Link to a presentation for the TOC (or add as attachment to issue)"
-
-  - type: textarea
-    id: meeting_details
-    attributes:
-      label: Meeting Details
-      placeholder: "Add meeting details and/or link to minutes"
-
-  - type: checkboxes
-    id: legend_interest
-    attributes:
-      label: Legend Studio Interest
-      options:
-        - label: "If this is a Data Model, I am interested in modeling it in the [FINOS Legend Studio Sandbox](https://www.finos.org/legend)"
+      value: "## 2. MAINTAINER TEAM"
 
   - type: textarea
     id: maintainers
     attributes:
-      label: Maintainers Team
-      description: "Who will be the Project Maintainers who are responsible for maintaining the project and engaging with the community per [maintainer's responsibilities](https://community.finos.org/docs/finos-maintainers-cheatsheet/#maintainer-responsibilities-and-available-resources)? Provide full name, affiliation, GitHub username and email address."
+      label: Maintainer Team
+      description: "Identify the core team. At least one maintainer must be from a FINOS member org."
       value: |
         | Name | Affiliation | Email | GitHub |
         | :--- | :--- | :--- | :--- |
         | | | | |
-
-  - type: checkboxes
-    id: compliance_checklist
-    attributes:
-      label: Compliance Checklist
-      options:
-        - label: "..."
+    validations:
+      required: true
 
   - type: markdown
     attributes:
-      value: "## Preferred Infrastructure"
-
-  - type: checkboxes
-    id: infra_channels
-    attributes:
-      label: Communication Channels
-      options:
-        - label: "GitHub Issues"
-        - label: "GitHub Public Discussions"
-        - label: "FINOS Slack Channel (Public)"
-        - label: "Mailing List (groups.io)"
-        - label: "Recurring Public Meetings (per [FINOS procedures](https://community.finos.org/docs/governance/meeting-procedures))"
+      value: "---"
 
   - type: markdown
     attributes:
-      value: |
-        ## Socialization & Community Engagement
-        It's highly recommended that once you submit this issue, you or anyone in the maintainer team proceed with socializing directly to the [FINOS community](mailto:community@finos.org) and through your personal network. The goal is to generate interest, support and ideally additional committed maintainers expressing the interest on the issue before it's sent to the Technical Oversight Committee for approval. Instructions and a template for you to adjust are avaialble in the [Contribution Process Socialization](https://community.finos.org/docs/governance/software-projects/contribution/#step-2-socialization) documentation.
+      value: "## 3. COMPLIANCE CONFIRMATION"
 
   - type: checkboxes
-    id: socialization_tasks
+    id: compliance_confirmation
     attributes:
-      label: Socialization Checklist
+      label: Compliance & Requirements Agreement
+      description: "Confirm you have read and agree to the following [FINOS Requirements](https://community.finos.org/docs/governance/Software-Projects/Contribution-Compliance-Requirements)."
       options:
-        - label: "I confirm I have socialized this contribution to `community@finos.org` (to be checked after the issue is raised)"
+        - label: "I confirm that I understand that all maintainers and contributors will need to be covered by a [Contributors License Agreement](https://community.finos.org/docs/governance/Software-Projects/easycla) (CCLA or ICLA.) before being able to contribute."
           required: true
-        - label: "Once you are happy with the socialization phase (garnered enough support / interest, addressed open questions, etc), please check this box and put a comment on this issue so it can be sent to the TOC for approval."
-        - label: "FINOS team added this to FINOS TOC Backlog and assigned TOC Chair for review"
+        - label: "I confirm that if the contribution is a software contribution it will use the Apache 2.0. License and any Third-Party code is compatible. See [License Categories](https://community.finos.org/docs/governance/software-projects/license-categories)."
+          required: true
+        - label: "I have selected the appropriate lifecycle stage based on that stages requirements. I agree and commit to to the Acceptance & Maintenance Requirements for my target stage."
+          required: true
 
-  - type: textarea
-    id: toc_findings
-    attributes:
-      label: TOC Findings / Report
-      description: "TOC summary for the final decision."
-        
   - type: checkboxes
-    id: toc_decision
+    id: socialization_confirm
     attributes:
-      label: FINOS TOC reviewed the contribution and it was
+      label: Socialization Acknowledgement
       options:
-       - label: "Accepted"
-       - label: "Rejected"
+        - label: "I understand I may need to socialize this proposal to community@finos.org before a TOC review."
+          required: true
+
+  - type: markdown
+    attributes:
+      value: "---"
+
+  - type: markdown
+    attributes:
+      value: "## 4. INTERNAL OPERATIONS (FINOS Staff Only)"
+
+  - type: checkboxes
+    id: internal_workflow
+    attributes:
+      label: Operational Completion
+      description: "This checkbox is for FINOS Staff use only."
+      options:
+        - label: "I confirm that all preliminary internal FINOS reviews and workflow tasks have been completed."
+    validations:
+      required: false
