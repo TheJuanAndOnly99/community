@@ -59,8 +59,6 @@ FINOS have developed a tool that scans all the GitHub repositories across all FI
 - `repo-not-on-file` - We don't have this repository on file. We will fix this issue on our side as soon as possible and keep you posted.
 - `no-whitesource` - WhiteSource configuration was not found; make sure that dependencies are scanned against security vulnerabilities. Read more on [the WhiteSource page](/docs/development-infrastructure/code-validation/whitesource).
 
-Code is publicly available on https://github.com/finos/metadata-tool, the command to invoke is `check-project-repos`.
-
 #### Ignoring validations
 There may be corner cases, for example repositories that contain data don't need whitesource integration. In those cases, it is possible to define a `.finos-blueprint.json` file in the root folder, with the following structure:
 ```
