@@ -24,7 +24,8 @@ AI-readable documentation: [index](https://community.finos.org/llms.txt) · [ful
 ### Resources
 - [FINOS Website](https://finos.org)
 - [FINOS Mailing lists](/docs/governance/Software-Projects/journey/engage)
-- [Find and join mailing lists in LFX Self Serve](https://app.lfx.dev/docs/mailing-lists)
+- [Email Archives (requires Google login)](http://groups.google.com/a/finos.org/)
+- [LFX mailing lists](https://app.lfx.dev/docs/mailing-lists) (new lists)
 
 ## Join the FINOS Community list
 Everyone is welcome to subscribe to the FINOS General Community List at community@finos.org by emailing [community+subscribe@finos.org](mailto:community+subscribe@finos.org). 
