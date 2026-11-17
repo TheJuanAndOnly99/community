@@ -54,6 +54,7 @@ Use these LFX guides for the product itself:
   * **Transcript** — on
   * **Auto-upload to YouTube** — off
   * **AI meeting summary** — on, with **Requires host approval before sharing with guests** selected
+  * **Who can access recordings & summaries** — **Meeting Hosts Only**
 
 ## Prepare and circulate an agenda
 
