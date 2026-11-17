@@ -18,11 +18,9 @@ Why not join a Project or a SIG online Meeting? Browse the [FINOS Community Cale
 Ready to meet the Community at large, online or in person? Take a look at our [recurring meetups schedule](/docs/growing-your-project-community/meetups) and our [Events](https://www.finos.org/hosted-events), including our flagship event the [Open Source in Finance Forum](https://events.linuxfoundation.org/open-source-finance-forum/), the global event solely dedicated to open source in financial services. 
 
 ## Mailing Lists
-FINOS mailing lists are a key channel for community activity. Below is a list of commonly used foundation-wide and project-specific mailing lists. Most lists are hosted on Google Groups (**Google login required** for web access).
+FINOS mailing lists are a key channel for community activity. Below is a list of commonly used foundation-wide and project-specific mailing lists. Google Groups is deprecated for FINOS mailing lists; they are replaced by LFX mailing lists, which run on Groups.io.
 
-> In order to subscribe to any of the FINOS-wide or project-specific mailing lists, you can either send an email to `<list-name>+subscribe@finos.org` or 
-> visit the web archive link on Google Group. Please note that the latter option may be blocked by some financial services organizations. For example, to 
-> subscribe to community@finos.org, email [community+subscribe@finos.org](mailto:community+subscribe@finos.org).
+> To find and join FINOS mailing lists, sign in to [LFX Self Serve](https://app.lfx.dev/) with your Linux Foundation ID and select **Mailing Lists**. See the [LFX Mailing Lists documentation](https://app.lfx.dev/docs/mailing-lists). Maintainers who need to manage a project's lists should email [help@finos.org](mailto:help@finos.org) for access.
 
 Please note that membership in some lists is restricted, and requests to subscribe to those lists may only be accepted if membership requirements are met. In order to manage spam, all Foundation mailing lists that allow posting by the general public are moderated, which can result in slight delays in delivery.
 
