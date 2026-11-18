@@ -106,8 +106,8 @@ function Home() {
               <div className="row">
                 <ul>
                   <li>[FINOS Website](https://finos.org)</li>
-                  <li>[Email Archives (requires Google login)](http://groups.google.com/a/finos.org/)</li>
-                  <li>[LFX mailing lists](https://app.lfx.dev/docs/mailing-lists) (new lists)</li>
+                  <li>[Mailing list archives on Groups.io](https://lists.finos.org/g/parent/subgroups)</li>
+                  <li>[Older Google Groups archives (requires Google login)](http://groups.google.com/a/finos.org/)</li>
               </ul>
               </div>
             </div>
