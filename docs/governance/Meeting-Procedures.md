@@ -14,7 +14,7 @@ This document describes requirements and recommendations for holding meetings of
 
 ## Self-serve meetings in LFX
 
-FINOS project meetings are scheduled in [LFX Self Serve](https://app.lfx.dev/) ([Meetings docs](https://app.lfx.dev/docs/meetings)). Once you have access, you can schedule, update, and cancel your project's Zoom meetings there. How to use the product is in the LFX documentation linked below; this page covers FINOS access, policy, and hosting expectations.
+FINOS project meetings are scheduled in [LFX Self Serve](https://app.lfx.dev/). Once you have access, you can schedule, update, and cancel your project's Zoom meetings there. How to use the product is in the LFX documentation linked below; this page covers FINOS access, policy, and hosting expectations.
 
 ### Request access
 
