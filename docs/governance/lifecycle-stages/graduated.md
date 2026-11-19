@@ -37,7 +37,7 @@ While development activities in this stage are largely established and self-suff
 
 To graduate into the Graduated stage, a project must meet [Graduated Requirements](/docs/governance/lifecycle-stages/graduated/#requirements) and [Graduated ongoing maintenance requirements](/docs/governance/lifecycle-stages/graduated/#ongoing-maintenance-requirements). 
 
-Any project maintainer may request Graduation by opening a [project graduation request](https://github.com/finos/community/issues/new?assignees=maoo%2C+TheJuanAndOnly99&labels=&template=project_graduation.yml&title=projectName+Graduation+request) with an information packet demonstrating that they've met the requirements for activation (see below for details).
+Any project maintainer may request Graduation by opening a [project graduation request](https://github.com/finos/community/issues/new?assignees=maoo%2C+TheJuanAndOnly99&labels=&template=project_graduation.yml&title=projectName+Graduation+request) with an information packet demonstrating that they've met the requirements for graduation (see below for details).
 
 ## Requirements
 
