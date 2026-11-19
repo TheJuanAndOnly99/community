@@ -174,7 +174,7 @@ body:
       options:
         - label: "I agree to grant 'finos-admin' Admin/Owner access to the repository for security auditing and setup."
           required: true
-        - label: "I authorize the transfer of this code/repository to the FINOS GitHub organization upon project acceptance."
+        - label: "I authorize the transfer of this code/repository to the FINOS GitHub organization (finos-labs for Labs projects) upon project acceptance."
           required: true
         - label: "I confirm I have the legal authority (individual or corporate) to grant these permissions."
           required: true

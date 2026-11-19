@@ -41,9 +41,9 @@ body:
       label: Incubation Compliance
       description: "Graduated projects must meet and maintain all standards from the previous lifecycle stages."
       options:
-        - label: "I confirm that the project continues to meet all [Incubating Acceptance Requirements](https://community.finos.org/docs/governance/lifecycle-stages/incubating#acceptance-requirements) (including the Labs stage requirements)"
+        - label: "I confirm that the project continues to meet all [Incubating Acceptance Requirements](https://community.finos.org/docs/governance/lifecycle-stages/incubating#incubating-acceptance-requirements) (including the Labs stage requirements)"
           required: true
-        - label: "I confirm that the project meets all [Incubating Ongoing Maintenance Requirements](https://community.finos.org/docs/governance/lifecycle-stages/incubating#ongoing-maintenance-requirements)"
+        - label: "I confirm that the project meets all [Incubating Ongoing Maintenance Requirements](https://community.finos.org/docs/governance/lifecycle-stages/incubating#incubating-ongoing-maintenance-requirements)"
           required: true
         - label: "I confirm that the project has adhered to its roadmap during Incubation"
           required: true
