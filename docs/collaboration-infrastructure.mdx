@@ -49,10 +49,10 @@ Below is a recap of who can do what.
 | | | Consume any artifact produced by a Project |
 | | | Access FINOS issue boards |
 | Any GitHub user | Read | Fork repository |
-| | | Submit a code change via Pull Request (flagged by <a href={useBaseUrl('/docs/governance/Software-Projects/easycla')}>EasyCLA</a>)
+| | | Submit a code change via Pull Request (DCO sign-off checked by <a href={useBaseUrl('/docs/governance/Software-Projects/dco')}>DCO2</a> by default, or flagged by <a href={useBaseUrl('/docs/governance/Software-Projects/easycla')}>EasyCLA</a> where the project uses CLA)
 | | | Use GitHub Issues to contribute to the discussion |
-| GitHub user covered by [CLA](/docs/governance/Software-Projects/easycla) | Read | Become a member of the GitHub FINOS Organization |
-| | | Submit a code change via Pull Request (validated by the <a href={useBaseUrl('/docs/governance/Software-Projects/easycla')}>EasyCLA</a>) |
+| GitHub user covered by [DCO](/docs/governance/Software-Projects/dco) sign-off or [CLA](/docs/governance/Software-Projects/easycla) | Read | Become a member of the GitHub FINOS Organization |
+| | | Submit a code change via Pull Request (validated by <a href={useBaseUrl('/docs/governance/Software-Projects/dco')}>DCO2</a> by default, or by <a href={useBaseUrl('/docs/governance/Software-Projects/easycla')}>EasyCLA</a> where the project uses CLA) |
 | FINOS Staff | Triage | Issue/PR Triage |
 | | | Administration tasks |
 | | | Monitoring |
@@ -132,7 +132,7 @@ The release process allows to publish deployable units into a publicly available
 ##### Avoid direct changes to GitHub repositories - use Pull Requests
 Making direct changes to repositories is not recommended, for teams bigger than 1, for few reasons, including:
 
-1. Direct commits are not validated, as they cannot be blocked (ie, if [CLA](/docs/governance/Software-Projects/easycla) is not in place)
+1. Direct commits are not validated, as they cannot be blocked (ie, if a [DCO](/docs/governance/Software-Projects/dco) sign-off or [CLA](/docs/governance/Software-Projects/easycla) is not in place)
 2. Pull Requests allow to have a conversation with the team
 3. Pull Requests tend to have a more thorough validation pipeline
 
@@ -141,10 +141,10 @@ Project teams are required to review contributions from non-committer community 
 
 In addition to the usual code-level checks a project team may choose to perform on contributions (for code quality, roadmap alignment, etc.), it is also critically important that the legal requirements of the Foundation are met.  This involves:
 
-1. Confirming that the person providing the contribution has a Contributor Licensing Agreement in place with the Foundation (though [EasyCLA](/docs/governance/Software-Projects/easycla) will run an automatic scan of all Pull Requests).
+1. Confirming that every commit carries a [DCO](/docs/governance/Software-Projects/dco) sign-off (checked on Pull Requests by DCO2), the FINOS default, or, where the project uses CLA, that the person providing the contribution has a Contributor License Agreement in place with the Foundation (though [EasyCLA](/docs/governance/Software-Projects/easycla) will run an automatic scan of all Pull Requests).
 2. Confirming that their change doesn't introduce new code or dependencies that are incompatible with the Apache Software License.
 
-The Foundation's project infrastructure automatically checks for CLA compliance for pull requests only. Unfortunately it's not currently possible to check for CLA compliance of commits that are directly pushed to a master branch by a committer (this is a GitHub limitation).  For that reason, we strongly recommend that project teams do not add new project team members until they've verified that those contributors have a CLA in place with the Foundation.  In the meantime, you can encourage contributors to fork your project and contribute via pull requests, until such time as you've confirmed their CLA status with the Foundation's legal counsel.
+The Foundation's project infrastructure automatically checks for DCO or CLA compliance for pull requests only. Unfortunately it's not currently possible to check for DCO or CLA compliance of commits that are directly pushed to a master branch by a committer (this is a GitHub limitation).  For that reason, we strongly recommend that project teams do not add new project team members until they've verified that those contributors meet the project's DCO or CLA requirements.  In the meantime, you can encourage contributors to fork your project and contribute via pull requests, until such time as you've confirmed their CLA status with the Foundation's legal counsel.
 
 Confirming that contributions haven't introduced incompatibly licensed code is inherently build tool specific, and so we are unable to provide instructions that cover all possible development setups. Check the list of <a href={useBaseUrl('/docs/development-infrastructure/code-validation/intro')}>code validation tools</a> available to FINOS hosted projects.
 

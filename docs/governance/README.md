@@ -17,7 +17,7 @@ Individuals who have made significant contributions to FINOS projects can join o
 
 ## Governing Board
 
-The Foundation is overseen by a [Governing Board](https://www.finos.org/governing-board) composed of member representatives and led by FINOS Executive Director. The Governing Board is composed of Platinum Representatives, each appointed by a Platinum member; up to five Gold Representatives, elected by the Gold Members voting as a class; and one Silver Representative, elected by the Silver Members voting as a class. FINOS uses [ranked-choice voting](board-election) to tabulate elections.
+The Foundation is overseen by a [Governing Board](https://www.finos.org/governing-board) composed of member representatives. The Governing Board voting members are the Platinum Representatives, each appointed by a Platinum member; the FINOS Executive Director; the TOC Chair; up to five Gold Representatives, elected by the Gold Members voting as a class; and one Silver Representative, elected by the Silver Members voting as a class. Governing Board meetings are presided over by the Board Chair and Vice Chair. FINOS uses [ranked-choice voting](board-election) to tabulate elections.
 
 The Foundation's day-to-day operations are run by the [FINOS team](https://finos.org/team).
 
@@ -78,9 +78,9 @@ The TOC approves lifecycle transitions following objective criteria detailed for
 Some projects may optionally start in a time-bound pre-incubation stage called *Formation*, which is typically restricted to FINOS Members or at the discretion of the project lead. [Forming projects](/docs/governance/project-lifecycle) might not be publicly visible until entering Incubation when they will be fully open sourced.
 
 ### Project Metrics 
-Live metrics of Project activity and contributions across all FINOS collaboration systems are publicly available in [FINOS Project Activity Dashboard](https://metrics.finos.org).
+Live metrics of Project activity and contributions across all FINOS collaboration systems are publicly available in [LFX Insights](https://insights.linuxfoundation.org/collection/details/finos).
 
 ### Project Governing Board Reporting 
-Periodically data about the health, activity, and progress of projects is reported to the Governing Board. Reports are largely generated automatically out of the [FINOS Project Activity Dashboard](https://metrics.finos.org) and provided to the TOC for review before being passed along to the board. The Governing Board, TOC and FINOS team use these reports to determine which projects need additional attention, which should be considered for archiving, etc.
+Periodically data about the health, activity, and progress of projects is reported to the Governing Board. Reports are largely generated automatically out of [LFX Insights](https://insights.linuxfoundation.org/collection/details/finos) and provided to the TOC for review before being passed along to the board. The Governing Board, TOC and FINOS team use these reports to determine which projects need additional attention, which should be considered for archiving, etc.
 
 Every year, the Governing Board identifies a few "strategic initiatives" to receive extra attention from the FINOS team during an agreed time period, with the goal of supporting growth and progression through the Project Lifecycle. Focus projects should be prepared to provide more detailed progress reports to the Board at the next Board meeting.

@@ -23,8 +23,7 @@ Need an ICLA? Unsure if you are covered under an existing CCLA? Email [help@fino
 
 ### Raising an Issue
 * Create your issue using GitHub Issues
-* New issues contain two templates in the description: bug report and enhancement request. Please pick the most appropriate for your issue, **then delete the other**.
-  * Please also tag the new issue with either "Bug" or "Enhancement".
+* Pick the matching issue form (Bug Report, Feature Request, Support Question); labels are applied automatically.
 * Please use [Markdown formatting](https://docs.github.com/en/get-started/writing-on-github)
 liberally to assist in readability.
   * [Code fences](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks) for exception stack traces and log entries, for example, massively improve readability.
